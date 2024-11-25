@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Reset and Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+            font-family: 'Roboto', sans-serif;
+            color: #f7f5f5;
+            line-height: 1.6;
+            background-image: url('img/b.avif');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #1e1e1e, #ff6600);
+            color: #fff;
+            padding: 15px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+        header .logo h1 {
+            font-size: 1rem;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            color: #fff;
+            padding: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background 0.3s ease;
+        }
+        nav a:hover, nav a.active {
+            background: #ff6600;
+            border-radius: 5px;
+        }
+
+        /* Thank You Section */
+        section.thank-you-message {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 80px 20px;
+        }
+        .thank-you-content {
+            max-width: 600px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .thank-you-content h2 {
+            font-size: 2rem;
+            color: #ff6600;
+            margin-bottom: 15px;
+        }
+        .thank-you-content p {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background: #1e1e1e;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+        footer a {
+            color: #ff6600;
+            margin: 0 5px;
+            font-size: 1.2rem;
+        }
+        footer a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <h1>MotorShop</h1>
+    </div>
+    <nav>
+        <a href="index.html"><i class="fas fa-home" aria-label="Home"></i> Home</a>
+        <a href="about.html"><i class="fas fa-info-circle" aria-label="About"></i> About</a>
+        <a href="services.html"><i class="fas fa-cogs" aria-label="Services"></i> Services</a>
+        <a href="contact.html"><i class="fas fa-envelope" aria-label="Contact"></i> Contact</a>
+    </nav>
+</header>
+
+<section class="thank-you-message">
+    <div class="thank-you-content">
+        <h2>Thank You, <span id="sender-name"></span>!</h2>
+        <p>We appreciate you reaching out. Your message has been sent successfully.</p>
+        <p>We will respond to you as soon as possible!</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 MotorShop. All Rights Reserved.</p>
+    <p>Follow us on: 
+        <a href="#"><i class="fab fa-facebook" aria-label="Facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter" aria-label="Twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram" aria-label="Instagram"></i></a>
+    </p>
+</footer>
+
+</body>
+</html>
