@@ -50,10 +50,11 @@
             justify-content: space-between;
             align-items: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s ease;
         }
 
         header .logo h1 {
-            font-size: 1.5rem;
+            font-size: 0.8em;
             margin: 0;
         }
 
@@ -111,10 +112,6 @@
             outline: none;
         }
 
-        .contact-form textarea {
-            resize: none;
-        }
-
         .contact-form button {
             background-color: #ff6600;
             color: white;
@@ -148,8 +145,8 @@
             }
 
             nav a {
-                padding: 10px;
-                font-size: 0.9rem;
+                padding: 10px 20px;
+                font-size: 0.5rem;
             }
 
             section h2 {
@@ -165,8 +162,8 @@
         @media (max-width: 480px) {
             nav a {
                 margin: 5px 0;
-                padding: 8px 10px;
-                font-size: 0.8rem;
+                padding: 8px 15px;
+                font-size: 0.5rem;
             }
 
             section h2 {
@@ -180,6 +177,7 @@
     </style>
 </head>
 <body>
+
 <header>
     <div class="logo">
         <h1>MotorShop</h1>
@@ -195,10 +193,10 @@
 <section class="contact-section">
     <h2>Contact Us</h2>
     <div class="contact-content">
-        <form class="contact-form" action="thankyou.html" method="POST">
-            <input type="text" name="name" placeholder="Your Name" aria-label="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" aria-label="Your Email" required>
-            <textarea name="message" placeholder="Your Message" rows="5" aria-label="Your Message" required></textarea>
+        <form class="contact-form" action="thankyou.html" method="GET">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
             <button type="submit">Send Message</button>
         </form>
     </div>
