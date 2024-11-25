@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - MotorShop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+      /* Reset */
+      * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #f7f5f5;
+        line-height: 1.6;
+        background-image: url('img/b.avif');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header Styling */
+        header {
+        background: linear-gradient(135deg, #1e1e1e, #ff6600);
+        color: #fff;
+        padding: 15px 20px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: background 0.3s ease;
+    }
+
+    header .logo h1 {
+        font-size: 0.8em;
+        margin: 0;
+    }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: #fff;
+            padding: 10px 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover,
+        nav a.active {
+            background: #ff6600;
+            border-radius: 5px;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 70vh;
+            background: url('img/about.jpg') center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 0;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            z-index: 1;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            z-index: 1;
+        }
+
+        /* Main Content */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            background: #ff6600;
+            text-transform: uppercase;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #e65a00;
+        }
+
+        /* Footer */
+        footer {
+            background: #1e1e1e;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        footer a {
+            color: #ff6600;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: #e65a00;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+        header {
+            padding: 10px;
+        }
+
+        nav a {
+            padding: 10px 20px;
+            font-size: 0.5rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        nav a {
+            margin: 10px 0;
+            font-size: 0.5rem;
+        }
+
+        .hero {
+            height: 60vh;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+        }
+
+        .hero p {
+            font-size: 1rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        nav a {
+            margin: 5px 0;
+            padding: 8px 15px;
+            font-size: 0.5rem;
+        }
+
+        .hero h2 {
+            font-size: 1.8rem;
+        }
+
+        .hero p {
+            font-size: 0.8rem;
+        }
+
+        section {
+            padding: 60px 10px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>MotorShop</h1>
+        </div>
+        <nav>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="about.html" class="active"><i class="fas fa-info-circle"></i> About</a>
+            <a href="services.html"><i class="fas fa-cogs"></i> Services</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay">
+            <h2>About MotorShop</h2>
+            <p>Experience the ultimate riding journey with MotorShop.</p>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <h2>About MotorShop</h2>
+        <p>At MotorShop, we are passionate about motorcycles and dedicated to delivering the best riding experience to our customers. From high-performance bikes to reliable everyday rides, we cater to every rider's needs and budget.</p>
+        <p>Our expert team ensures that every motorcycle we sell meets the highest standards of safety, quality, and performance. We also offer a wide range of services and accessories to enhance your biking experience. Discover the perfect ride and make your journey unforgettable.</p>
+        <a href="services.html" class="cta-button">Discover Our Services</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MotorShop. All Rights Reserved.</p>
+        <p>Follow us on: 
+            <a href="#"><i class="fab fa-facebook"></i></a> 
+            <a href="#"><i class="fab fa-twitter"></i></a> 
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </p>
+    </footer>
+</body>
+</html>
