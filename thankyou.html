@@ -4,24 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You</title>
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Reset Styles */
+        /* Reset and Global Styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
-        /* Body and Background */
         html, body {
             height: 100%;
-        }
-
-        body {
             font-family: 'Roboto', sans-serif;
             color: #f7f5f5;
             line-height: 1.6;
@@ -30,15 +23,13 @@
             background-position: center;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
         }
-
         a {
             text-decoration: none;
             color: inherit;
         }
 
-        /* Header Styles */
+        /* Header */
         header {
             background: linear-gradient(135deg, #1e1e1e, #ff6600);
             color: #fff;
@@ -46,158 +37,104 @@
             position: fixed;
             width: 100%;
             top: 0;
-            left: 0;
-            z-index: 1000;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: background 0.3s ease;
+            z-index: 1000;
         }
-
         header .logo h1 {
-            font-size: 1.5em;
-            margin: 0;
+            font-size: 1rem;
         }
-
         nav {
             display: flex;
             gap: 15px;
         }
-
         nav a {
             color: #fff;
-            padding: 10px 15px;
+            padding: 10px;
             font-weight: bold;
             text-transform: uppercase;
             transition: background 0.3s ease;
         }
-
-        nav a:hover,
-        nav a.active {
+        nav a:hover, nav a.active {
             background: #ff6600;
             border-radius: 5px;
         }
 
-        /* Main Content Styles */
+        /* Thank You Section */
         section.thank-you-message {
             flex: 1;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 100px 20px 20px;
-            text-align: center;
+            padding: 80px 20px;
         }
-
         .thank-you-content {
             max-width: 600px;
-            background: rgba(0, 0, 0, 0.7);
+            background: rgba(0, 0, 0, 0.8);
             padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
         }
-
         .thank-you-content h2 {
-            font-size: 2.5rem;
+            font-size: 2rem;
             color: #ff6600;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
-
         .thank-you-content p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             margin-bottom: 10px;
         }
 
-        /* Footer Styles */
+        /* Footer */
         footer {
             background: #1e1e1e;
             color: #fff;
             text-align: center;
-            padding: 20px;
+            padding: 15px;
         }
-
         footer a {
             color: #ff6600;
             margin: 0 5px;
             font-size: 1.2rem;
         }
-
         footer a:hover {
             color: #fff;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 1024px) {
-            header {
-                padding: 10px;
-            }
-
-            nav a {
-                padding: 10px;
-                font-size: 0.9rem;
-            }
-
-            .thank-you-content h2 {
-                font-size: 2rem;
-            }
-
-            .thank-you-content p {
-                font-size: 1rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            header {
-                padding: 10px 15px;
-            }
-
-            nav a {
-                padding: 8px 10px;
-                font-size: 0.8rem;
-            }
-
-            .thank-you-content h2 {
-                font-size: 1.8rem;
-            }
-
-            .thank-you-content p {
-                font-size: 0.9rem;
-            }
         }
     </style>
 </head>
 <body>
 <header>
     <div class="logo">
-        <h1>Thank You!</h1>
+        <h1>MotorShop</h1>
     </div>
     <nav>
-        <a href="index.html"><i class="fas fa-home"></i> Home</a>
-        <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
-        <a href="services.html"><i class="fas fa-cogs"></i> Services</a>
-        <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        <a href="index.html"><i class="fas fa-home" aria-label="Home"></i> Home</a>
+        <a href="about.html"><i class="fas fa-info-circle" aria-label="About"></i> About</a>
+        <a href="services.html"><i class="fas fa-cogs" aria-label="Services"></i> Services</a>
+        <a href="contact.html"><i class="fas fa-envelope" aria-label="Contact"></i> Contact</a>
     </nav>
 </header>
 
 <section class="thank-you-message">
     <div class="thank-you-content">
         <h2>Thank You, <span id="sender-name"></span>!</h2>
-        <p>We appreciate you taking the time to reach out to us. Your message has been successfully sent.</p>
-        <p>We will get back to you as soon as possible!</p>
+        <p>We appreciate you reaching out. Your message has been sent successfully.</p>
+        <p>We will respond to you as soon as possible!</p>
     </div>
 </section>
 
 <footer>
     <p>&copy; 2024 MotorShop. All Rights Reserved.</p>
     <p>Follow us on: 
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook" aria-label="Facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter" aria-label="Twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram" aria-label="Instagram"></i></a>
     </p>
 </footer>
 
 <script>
-    // Set the sender's name dynamically from the URL or default text
+    // Dynamically set sender name from URL
     const urlParams = new URLSearchParams(window.location.search);
     const senderName = urlParams.get('name') || "Valued Customer";
     document.getElementById('sender-name').textContent = senderName;
