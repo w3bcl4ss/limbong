@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You</title>
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Reset */
+        /* Reset Styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Body Styling */
+        /* Body and Background */
         html, body {
             height: 100%;
         }
@@ -22,41 +24,41 @@
         body {
             font-family: 'Roboto', sans-serif;
             color: #f7f5f5;
-        line-height: 1.6;
-        background-image: url('img/b.avif');
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+            line-height: 1.6;
+            background-image: url('img/b.avif');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
 
         a {
             text-decoration: none;
             color: inherit;
         }
 
-        /* Header Styling */
+        /* Header Styles */
         header {
-        background: linear-gradient(135deg, #1e1e1e, #ff6600);
-        color: #fff;
-        padding: 15px 20px;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        left: 0;
-        z-index: 1000;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: background 0.3s ease;
-    }
+            background: linear-gradient(135deg, #1e1e1e, #ff6600);
+            color: #fff;
+            padding: 15px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s ease;
+        }
 
-    header .logo h1 {
-        font-size: 0.8em;
-        margin: 0;
-    }
+        header .logo h1 {
+            font-size: 1.5em;
+            margin: 0;
+        }
 
         nav {
             display: flex;
@@ -76,20 +78,21 @@
             background: #ff6600;
             border-radius: 5px;
         }
-        /* Main Content Styling */
+
+        /* Main Content Styles */
         section.thank-you-message {
             flex: 1;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 60px 20px;
+            padding: 100px 20px 20px;
             text-align: center;
         }
 
         .thank-you-content {
             max-width: 600px;
             background: rgba(0, 0, 0, 0.7);
-            padding: 20px 30px;
+            padding: 30px;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         }
@@ -105,7 +108,7 @@
             margin-bottom: 10px;
         }
 
-        /* Footer Styling */
+        /* Footer Styles */
         footer {
             background: #1e1e1e;
             color: #fff;
@@ -123,15 +126,15 @@
             color: #fff;
         }
 
-           /* Responsive Design */
-           @media (max-width: 1024px) {
-        header {
-            padding: 10px;
-        }
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            header {
+                padding: 10px;
+            }
 
-        nav a {
-            padding: 10px 20px;
-            font-size: 0.5rem;
+            nav a {
+                padding: 10px;
+                font-size: 0.9rem;
             }
 
             .thank-you-content h2 {
@@ -147,11 +150,11 @@
             header {
                 padding: 10px 15px;
             }
-        nav a {
-            margin: 5px 0;
-            padding: 8px 15px;
-            font-size: 0.5rem;
-        }
+
+            nav a {
+                padding: 8px 10px;
+                font-size: 0.8rem;
+            }
 
             .thank-you-content h2 {
                 font-size: 1.8rem;
@@ -199,6 +202,5 @@
     const senderName = urlParams.get('name') || "Valued Customer";
     document.getElementById('sender-name').textContent = senderName;
 </script>
-
 </body>
 </html>
